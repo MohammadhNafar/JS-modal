@@ -1,0 +1,291 @@
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+li , ul
+{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+a
+{
+    color: white;
+    text-decoration: none;
+
+}
+
+
+
+
+
+body
+{
+    font-family: system-ui;
+    overflow-x: hidden;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.alert
+{
+    color: white;
+    background-color: orange;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 5%;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+.prompt
+{
+    color: white;
+    background-color: rgb(77, 77, 185);
+    width: 8rem;
+    height: 2rem;
+    border-radius: 5%;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+.confirm
+{
+    color: white;
+    background-color: red;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 5%;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.boxConfirm
+{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    display: none;
+    position: fixed;
+    top: 3rem;
+    text-align: center;
+    width: 19rem;
+    
+    border-radius: 10%;
+    height: 11rem;
+    stroke: black;
+    background-color: #ffffff;
+    transition: opacity 0.3s ease;
+}
+
+
+
+
+
+
+
+.boxConfirm .closeConfirm
+{
+    
+    margin-left: -2rem;
+    margin-top: 6rem;
+    position: fixed;
+    text-align: center;
+    width: 5rem;
+    height: 2rem;
+    background-color: red;
+    color: white;
+    border-radius: 5%;
+    border: none;
+}
+.boxConfirm .doneConfirm
+{
+    color: white;
+    background-color: rgb(58, 58, 250);
+    text-align: center;
+    width: 5rem;
+    height: 2rem;
+    margin-left: 4rem;
+    margin-top: 6rem;
+    position: fixed;
+    border-radius: 5%;
+    border: none;
+}
+
+
+.boxConfirm.show
+{
+
+    pointer-events: auto;
+    display: block;
+}
+
+
+.boxPrompt
+{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+    display: none;
+    position: fixed;
+    top: 3rem;
+    text-align: center;
+    width: 19rem;
+    
+    border-radius: 10%;
+    height: 11rem;
+    stroke: black;
+    background-color: #ffffff;
+    transition: opacity 0.3s ease;
+}
+
+
+
+
+
+.boxPrompt .closePrompt
+{
+    
+    margin-left: -2rem;
+    margin-top: 6rem;
+    position: fixed;
+    text-align: center;
+    width: 5rem;
+    height: 2rem;
+    background-color: red;
+    color: white;
+    border-radius: 5%;
+    border: none;
+}
+.boxPrompt .donePrompt
+{
+    color: white;
+    background-color: rgb(58, 58, 250);
+    text-align: center;
+    width: 5rem;
+    height: 2rem;
+    margin-left: 4rem;
+    margin-top: 6rem;
+    position: fixed;
+    border-radius: 5%;
+    border: none;
+}
+
+
+.boxPrompt.show
+{
+
+    pointer-events: auto;
+    display: block;
+}
+
+
+.formPrompt
+{
+    position: fixed;
+    padding-left: 4rem;
+    padding-top: 3rem;
+}
+.formConfirm
+{
+    position: fixed;
+    padding-left: 4rem;
+    padding-top: 3rem;
+}
+.formAlert
+{
+    position: fixed;
+    padding-left: 4rem;
+    padding-top: 3rem;
+}
+
+
+
+
+
+
+.boxAlert
+{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+    display: none;
+    position: fixed;
+    top: 3rem;
+    text-align: center;
+    width: 19rem;
+    
+    border-radius: 10%;
+    height: 11rem;
+    stroke: black;
+    background-color: #ffffff;
+    transition: opacity 0.3s ease;
+}
+
+
+
+
+
+.boxAlert .closeAlert 
+{
+    
+    margin-left: -2rem;
+    margin-top: 6rem;
+    position: fixed;
+    text-align: center;
+    width: 5rem;
+    height: 2rem;
+    background-color: red;
+    color: white;
+    border-radius: 5%;
+    border: none;
+}
+.boxAlert  .doneAlert 
+{
+    color: white;
+    background-color: rgb(58, 58, 250);
+    text-align: center;
+    width: 5rem;
+    height: 2rem;
+    margin-left: 4rem;
+    margin-top: 6rem;
+    position: fixed;
+    border-radius: 5%;
+    border: none;
+}
+
+
+.boxAlert.show
+{
+
+    pointer-events: auto;
+    display: block;
+}
+
+.confirmTxt
+{
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    
+
+}

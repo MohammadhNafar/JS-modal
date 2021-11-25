@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    
+        <button id="alert" class="alert">Alert Model</button>
+        <button  id="prompt" class="prompt">Prompt Model</button>
+        <button id="confirm" class="confirm">Confirm Model</button>
+   
+    
+    <div class="boxConfirm" id="boxConfirm">
+        <br>
+        Confirm Model
+        <div class="items" >
+            
+            <form class="formConfirm">
+                <input class="confirmTxt" type="text" id="confirmTxt" name="confirmTxt">
+            </form>
+            <button id="closeConfirm" class="closeConfirm">Cancel</button>
+            <button id="doneConfirm"  onclick="runMessage();"  class="doneConfirm">Done</button>
+
+
+        </div>
+
+    </div>
+    <div class="boxPrompt" id="boxPrompt">
+        <br>
+
+        Prompt Model
+        <div class="items" >
+            <form class="formPrompt">
+                <input class="promptTxt" type="text" id="promptTxt" name="promptTxt">
+            </form>
+            <button id="closePrompt" class="closePrompt">Cancel</button>
+            <button id="donePrompt" onclick="runMessage();" class="donePrompt">Done</button>
+
+        </div>
+
+    </div>
+
+
+    <div class="boxAlert" id="boxAlert">
+        <br>
+        Alert Model
+        <div class="items">
+            
+            <form class="formAlert">
+                <input type="text" class="alertTxt" id="alertTxt" name="alertTxt">
+
+            </form>
+            <button id="closeAlert" class="closeAlert">Cancel</button>
+            <button id="doneAlert" onclick="runMessage();" class="doneAlert">Done</button>
+            
+
+        </div>
+
+    </div>
+
+
+ 
+
+
+
+
+
+
+
+<script src="./main.js"></script>
+</body>
+</html>
